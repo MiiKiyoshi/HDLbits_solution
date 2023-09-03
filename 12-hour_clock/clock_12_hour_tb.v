@@ -1,30 +1,34 @@
+`timescale 1ns/1ps
+
 module clock_12_hour_tb;
 
-reg clk, reset, enable;
-wire [7:0] q;
+    reg clk;
+    reg reset;
+    reg ena;
+    wire pm;
+    wire [7:0] hh;
+    wire [7:0] mm;
+    wire [7:0] ss;
 
-bcd60 u_bcd60(
-    .clk(clk),
-    .reset(reset),
-    .enable(enable),
-    .q(q)
-);
+    clock_12_hour u_clock_12_hour(
+        .clk(clk),
+        .reset(reset),
+        .ena(ena),
+        .pm(pm),
+        .hh(hh),
+        .mm(mm),
+        .ss(ss)
+    );
 
-initial begin
-    clk = 0;
-    reset = 1;
-    enable = 0;
-    #10;
-    reset = 0;
-    enable = 1;
-    #1000;
-    enable = 0;
-    #10;
-    $finish;
-end
+    initial begin
+        clk = 0;
+        reset = 1;
+        ena = 0;
+        #10 reset = 0;
+        #10 ena = 1;
+        #100000 $finish;
+    end
 
-always #5 clk = ~clk;
-
-initial $monitor($time, " q = %b", q);
+    always #5 clk = ~clk;
 
 endmodule
