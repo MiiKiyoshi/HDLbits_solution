@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim/clock_12_hour_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd12
+INFO: [VRFC 10-311] analyzing module bcd60
+INFO: [VRFC 10-311] analyzing module bcd60_0
+INFO: [VRFC 10-311] analyzing module clock_12_hour
+INFO: [VRFC 10-311] analyzing module count2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_12_hour_tb

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"clock_12_hour_tb_time_synth.v" \
+"../../../../../project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" \
+
+# Do not sort compile order
+nosort

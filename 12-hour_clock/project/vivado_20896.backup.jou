@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Sep  3 11:47:15 2023
+# Process ID: 20896
+# Current directory: E:/works/hdl/HDLbits_solution/12-hour_clock/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10476 E:\works\hdl\HDLbits_solution\12-hour_clock\project\project.xpr
+# Log file: E:/works/hdl/HDLbits_solution/12-hour_clock/project/vivado.log
+# Journal file: E:/works/hdl/HDLbits_solution/12-hour_clock/project\vivado.jou
+# Running On: miikiyoshi, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 4, Host memory: 17128 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.xpr
+update_compile_order -fileset sources_1
+create_peripheral xilinx.com user clock_12_hour 1.0 -dir E:/works/hdl/HDLbits_solution/12-hour_clock/project/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:clock_12_hour:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:clock_12_hour:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:clock_12_hour:1.0]
+set_property  ip_repo_paths  {E:/works/hdl/HDLbits_solution/12-hour_clock/project/../ip_repo/clock_12_hour_1_0 E:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/12-hour_clock_1_0 E:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/myip_1_0 E:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo} [current_project]
+update_ip_catalog -rebuild
