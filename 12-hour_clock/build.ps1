@@ -1,5 +1,5 @@
 echo "xvlog: Compiling Verilog HDL files"
-xvlog clock_12_hour_tb.v clock_12_hour.v | Out-File debug.log
+xvlog clock_12_hour_tb.v  clock_12_hour.v | Out-File debug.log
 echo ""
 echo "xelab: Linking compiled files"
 xelab clock_12_hour_tb -s clock_12_hour_tb -debug wave | Out-File debug.log -Append

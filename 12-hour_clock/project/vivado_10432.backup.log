@@ -1,0 +1,777 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Sep  3 12:38:49 2023
+# Process ID: 10432
+# Current directory: E:/works/hdl/HDLbits_solution/12-hour_clock/project
+# Command line: vivado.exe .\project.xpr
+# Log file: E:/works/hdl/HDLbits_solution/12-hour_clock/project/vivado.log
+# Journal file: E:/works/hdl/HDLbits_solution/12-hour_clock/project\vivado.jou
+# Running On: miikiyoshi, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 4, Host memory: 17128 MB
+#-----------------------------------------------------------
+start_gui
+open_project ./project.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty-a7-100/E.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty-a7-100/E.0/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty-a7-35/E.0/1.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty-a7-35/E.0/1.1/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/arty/C.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/basys3/C.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-15t:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/cmod_a7-15t/B.0/board.xml as part xc7a15tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-35t:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/cmod_a7-35t/B.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys-a7-100t/D.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys-a7-100t/D.0/1.3/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys-a7-50t/D.0/1.0/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys-a7-50t/D.0/1.3/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys4/B.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4_ddr:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys4_ddr/C.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys_video/A.0/1.1/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/nexys_video/A.0/1.2/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/usb104-a7/B/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/usb104-a7/B/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/usb104-a7/B/1.2/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/boards/board_files/usb104-a7/B/1.3/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at E:/tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'E:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/12-hour_clock_1_0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'E:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/myip_1_0'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/clock_12_hour_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/12-hour_clock_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo/myip_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/works/hdl/HDLbits_solution/12-hour_clock/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/tools/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 1467.324 ; gain = 355.090
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/bd/design_1/design_1.bd
+import_files -norecurse E:/works/hdl/HDLbits_solution/12-hour_clock/clock_12_hour.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse E:/works/hdl/HDLbits_solution/12-hour_clock/clock_12_hour_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: clock_12_hour
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2284.496 ; gain = 401.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clock_12_hour' [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:1]
+INFO: [Synth 8-6157] synthesizing module 'count2' [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'count2' (0#1) [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:49]
+INFO: [Synth 8-6157] synthesizing module 'bcd12' [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bcd12' (0#1) [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:68]
+INFO: [Synth 8-6157] synthesizing module 'bcd60' [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'bcd60' (0#1) [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'clock_12_hour' (0#1) [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2404.352 ; gain = 521.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2404.352 ; gain = 521.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2404.352 ; gain = 521.426
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2404.352 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_bclk'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_mclk'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_muten'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_pbdat'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_pblrc'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_recdat'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_reclrc'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_scl'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ac_sda'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_int_b'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rst_b'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_n'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_p'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_d_n[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_d_p[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_d_n[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_d_p[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_d_n[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_d_p[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_cec'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_scl'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_sda'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_p[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_p[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_p[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_p[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_n[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_n[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_n[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_n[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_n[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_n[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_n[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_n[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_p[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_n[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_p[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_n[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_p[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_n[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_p[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc_n[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_p[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_n[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_p[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_n[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_p[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_n[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_p[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd_n[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[4]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[5]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[6]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[7]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'otg_oc'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[4]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[4]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[5]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[4]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_hs'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_vs'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2489.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2516.141 ; gain = 633.215
+11 Infos, 95 Warnings, 95 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 2516.141 ; gain = 989.340
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'clock_12_hour_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/tools/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_12_hour_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj clock_12_hour_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_12_hour
+INFO: [VRFC 10-311] analyzing module count2
+INFO: [VRFC 10-311] analyzing module bcd12
+INFO: [VRFC 10-311] analyzing module bcd60
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_12_hour_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clock_12_hour_tb_behav xil_defaultlib.clock_12_hour_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/tools/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clock_12_hour_tb_behav xil_defaultlib.clock_12_hour_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 1. Module clock_12_hour doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 49. Module count2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 68. Module bcd12 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 102. Module bcd60 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 102. Module bcd60 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 1. Module clock_12_hour doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 49. Module count2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 68. Module bcd12 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 102. Module bcd60 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sources_1/imports/12-hour_clock/clock_12_hour.v" Line 102. Module bcd60 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.count2
+Compiling module xil_defaultlib.bcd12
+Compiling module xil_defaultlib.bcd60
+Compiling module xil_defaultlib.clock_12_hour
+Compiling module xil_defaultlib.clock_12_hour_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_12_hour_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_12_hour_tb_behav -key {Behavioral:sim_1:Functional:clock_12_hour_tb} -tclbatch {clock_12_hour_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source clock_12_hour_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_12_hour_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2535.418 ; gain = 19.277
+run all
+$finish called at time : 100020 ns : File "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" Line 29
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Sep  3 12:52:34 2023] Launched synth_1...
+Run output will be captured here: E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Sep  3 12:52:45 2023] Launched synth_1...
+Run output will be captured here: E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation  -mode post-synthesis -type functional
+INFO: [Vivado 12-12493] Simulation top is 'clock_12_hour_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/tools/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2543.379 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:20]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc:20]
+Finished Parsing XDC File [E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/constrs_1/imports/12-hour_clock/Zybo-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2598.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim/clock_12_hour_tb_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim/clock_12_hour_tb_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_12_hour_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj clock_12_hour_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim/clock_12_hour_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd12
+INFO: [VRFC 10-311] analyzing module bcd60
+INFO: [VRFC 10-311] analyzing module bcd60_0
+INFO: [VRFC 10-311] analyzing module clock_12_hour
+INFO: [VRFC 10-311] analyzing module count2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_12_hour_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot clock_12_hour_tb_func_synth xil_defaultlib.clock_12_hour_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/tools/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot clock_12_hour_tb_func_synth xil_defaultlib.clock_12_hour_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.bcd12
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.bcd60
+Compiling module xil_defaultlib.bcd60_0
+Compiling module xil_defaultlib.count2
+Compiling module xil_defaultlib.clock_12_hour
+Compiling module xil_defaultlib.clock_12_hour_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_12_hour_tb_func_synth
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2730.297 ; gain = 46.215
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_12_hour_tb_func_synth -key {Post-Synthesis:sim_1:Functional:clock_12_hour_tb} -tclbatch {clock_12_hour_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source clock_12_hour_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_12_hour_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 3104.309 ; gain = 560.941
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run all
+$finish called at time : 100020 ns : File "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" Line 29
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'clock_12_hour_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/tools/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim/clock_12_hour_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim/clock_12_hour_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim/clock_12_hour_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim/clock_12_hour_tb_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_12_hour_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj clock_12_hour_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim/clock_12_hour_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd12
+INFO: [VRFC 10-311] analyzing module bcd60
+INFO: [VRFC 10-311] analyzing module bcd60_0
+INFO: [VRFC 10-311] analyzing module clock_12_hour
+INFO: [VRFC 10-311] analyzing module count2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.srcs/sim_1/imports/12-hour_clock/clock_12_hour_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_12_hour_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim'
+"xelab --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot clock_12_hour_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.clock_12_hour_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/tools/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot clock_12_hour_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.clock_12_hour_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "clock_12_hour_tb_time_synth.sdf", for root module "clock_12_hour_tb/u_clock_12_hour".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "clock_12_hour_tb_time_synth.sdf", for root module "clock_12_hour_tb/u_clock_12_hour".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.bcd12
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.bcd60
+Compiling module xil_defaultlib.bcd60_0
+Compiling module xil_defaultlib.count2
+Compiling module xil_defaultlib.clock_12_hour
+Compiling module xil_defaultlib.clock_12_hour_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_12_hour_tb_time_synth
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 4189.422 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/works/hdl/HDLbits_solution/12-hour_clock/project/project.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_12_hour_tb_time_synth -key {Post-Synthesis:sim_1:Timing:clock_12_hour_tb} -tclbatch {clock_12_hour_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source clock_12_hour_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_12_hour_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 4189.422 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  3 12:57:23 2023...
