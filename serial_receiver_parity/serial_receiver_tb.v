@@ -1,10 +1,11 @@
 module serial_receiver_tb;
+
   // Declare signals
   reg clk, reset, in;
   wire [7:0] out_byte;
   wire done;
 
-  // Instantiate the serial receiver with parity check module
+  // Instantiate the serial receiver module
   serial_receiver u_serial_receiver (
     .clk(clk),
     .in(in),
@@ -54,13 +55,14 @@ module serial_receiver_tb;
     in = 1; #10; // Parity bit
     in = 1; #10; // Stop bit
 
+    // Wait for the done signal
+    #100; // Adjust this delay as needed
+
     $finish;
-   end
+  end
 
-   // Monitor the output signals and print the results
-   initial begin
-     $monitor ("Time: %t, out_byte: %b, done: %b", $time, out_byte, done);
-   end
-
+  // Monitor the output signals and print the results
+  initial begin
+    $monitor ("Time: %t, out_byte: %h, done: %b", $time, out_byte, done);
+  end
 endmodule
-

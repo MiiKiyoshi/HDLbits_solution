@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Sep 13 22:07:41 2023
-# Process ID: 11788
+# Start of session at: Thu Sep 14 00:06:27 2023
+# Process ID: 17696
 # Current directory: C:/works/hdl/HDLbits_solution/serial_receiver_parity
 # Command line: xsim.exe -source {xsim.dir/serial_receiver_tb/xsim_script.tcl}
 # Log file: C:/works/hdl/HDLbits_solution/serial_receiver_parity/xsim.log

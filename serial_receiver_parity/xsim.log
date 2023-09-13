@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Sep 13 22:07:41 2023
-# Process ID: 11788
+# Start of session at: Thu Sep 14 00:06:27 2023
+# Process ID: 17696
 # Current directory: C:/works/hdl/HDLbits_solution/serial_receiver_parity
 # Command line: xsim.exe -source {xsim.dir/serial_receiver_tb/xsim_script.tcl}
 # Log file: C:/works/hdl/HDLbits_solution/serial_receiver_parity/xsim.log
@@ -98,17 +98,18 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 avail
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/TOOLS/Xilinx/Vivado/2023.1/data/ip'.
-current_fileset: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1363.844 ; gain = 230.988
+current_fileset: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1367.020 ; gain = 196.434
 # xsim {serial_receiver_tb} -wdb {simulate_xsim_serial_receiver_tb.wdb} -autoloadwcfg
 Time resolution is 1 ps
 create_wave_config
 run all
-Time:                    0, out_byte: 00000000, done: 0
-Time:               120000, out_byte: 01010011, done: 0
-Time:               130000, out_byte: 00000000, done: 0
-Time:               230000, out_byte: 00010011, done: 1
-$finish called at time : 240 ns : File "C:/works/hdl/HDLbits_solution/serial_receiver_parity/serial_receiver_tb.v" Line 57
+Time:                    0, out_byte: 00, done: 0
+Time:               110000, out_byte: 53, done: 1
+Time:               120000, out_byte: 00, done: 0
+Time:               220000, out_byte: 13, done: 1
+Time:               230000, out_byte: 00, done: 0
+$finish called at time : 340 ns : File "C:/works/hdl/HDLbits_solution/serial_receiver_parity/serial_receiver_tb.v" Line 61
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting xsim at Wed Sep 13 22:09:21 2023...
+INFO: [Common 17-206] Exiting xsim at Thu Sep 14 00:08:31 2023...

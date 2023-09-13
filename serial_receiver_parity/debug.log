@@ -4,6 +4,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/hdl/HDLbits_solution/seria
 INFO: [VRFC 10-311] analyzing module serial_receiver_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/hdl/HDLbits_solution/serial_receiver_parity/serial_receiver.v" into library work
 INFO: [VRFC 10-311] analyzing module serial_receiver
+INFO: [VRFC 10-311] analyzing module serial_receiver_legacy
 INFO: [VRFC 10-311] analyzing module parity
 
 
@@ -18,7 +19,6 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module work.parity
 Compiling module work.serial_receiver
 Compiling module work.serial_receiver_tb
 Built simulation snapshot serial_receiver_tb
@@ -33,4 +33,4 @@ Built simulation snapshot serial_receiver_tb
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 start_gui
-INFO: [Common 17-206] Exiting xsim at Wed Sep 13 22:09:21 2023...
+INFO: [Common 17-206] Exiting xsim at Thu Sep 14 00:08:31 2023...

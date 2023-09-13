@@ -2,6 +2,106 @@ module serial_receiver(
     input clk,
     input in,
     input reset,    // Synchronous reset
+    output reg [7:0] out_byte,
+    output reg done
+); //
+ 
+    parameter IDLE = 3'd0, START = 3'd1, DATA = 3'd2;
+    parameter STOP = 3'd3, WAIT = 3'd4;
+    reg [3:0]	current_state;
+    reg [3:0]	next_state;
+    reg [3:0]	counter;
+    reg [7:0]	par_in;
+    
+    always@(posedge clk)begin
+        if(reset)begin
+            current_state <= IDLE;
+        end
+        else begin
+            current_state <= next_state;
+        end
+    end
+    
+    always@(*)begin
+        case(current_state)
+            IDLE:begin
+                next_state = in ? IDLE : START;
+            end
+            START:begin
+                next_state = DATA;
+            end
+            DATA:begin
+                if(counter == 4'd8)begin
+                    if(in)begin
+                        next_state = STOP;
+                    end
+                    else begin
+                        next_state = WAIT;
+                    end
+                end
+                else begin
+                    next_state = DATA;
+                end
+            end
+            STOP:begin
+                next_state = in ? IDLE : START;
+            end
+            WAIT:begin
+                next_state = in ? IDLE : WAIT;
+            end
+            default:begin
+                next_state = IDLE;
+            end
+        endcase
+    end
+    
+    always@(posedge clk)begin
+        if(reset)begin
+            done <= 1'b0;
+            out_byte <= 8'd0;
+            counter <= 4'd0;
+        end
+        else begin
+            case(next_state)
+            	IDLE:begin
+                	done <= 1'b0;
+                	out_byte <= 8'd0;
+                	counter <= 4'd0;
+            	end
+            	START:begin
+                	done <= 1'b0;
+                	out_byte <= 8'd0;
+                	counter <= 4'd0;
+            	end
+            	DATA:begin
+                	counter <= counter + 1'b1;
+                	done <= 1'b0;
+                	par_in[counter] <= in;
+                	out_byte <= 8'd0;
+            	end
+            	STOP:begin
+                	done <= 1'b1;
+                	out_byte <= par_in;
+            	end
+            	WAIT:begin
+                	done <= 1'b0;
+                	out_byte <= 8'd0;
+            	end
+            	default:begin
+                	done <= 1'b0;
+                	out_byte <= 8'd0;
+                	counter <= 3'd0;
+            	end
+            endcase
+    	end
+    end
+ 
+endmodule
+
+module serial_receiver_legacy(
+    input clk,
+    input in,
+    input reset,    // Synchronous reset
     output [7:0] out_byte,
     output done
 ); 

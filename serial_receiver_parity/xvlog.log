@@ -2,4 +2,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/hdl/HDLbits_solution/seria
 INFO: [VRFC 10-311] analyzing module serial_receiver_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/hdl/HDLbits_solution/serial_receiver_parity/serial_receiver.v" into library work
 INFO: [VRFC 10-311] analyzing module serial_receiver
+INFO: [VRFC 10-311] analyzing module serial_receiver_legacy
 INFO: [VRFC 10-311] analyzing module parity
