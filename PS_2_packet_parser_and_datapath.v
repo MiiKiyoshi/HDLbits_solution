@@ -1,8 +1,9 @@
-module top_module(
+module PS_2_packet_parser_and_datapath(
     input clk,
     input [7:0] in,
     input reset,    // Synchronous reset
-    output done); //
+    output reg [23:0] out_bytes,
+    output reg done); //
 
     reg [1:0] state, next_state;
 
@@ -22,6 +23,8 @@ module top_module(
     // State flip-flops (sequential)
     always @(posedge clk) begin
       if(reset) begin
+        out_bytes <= 24'b0;
+        done <= 0;
         state <= BYTE1;
       end else begin
         state <= next_state;
@@ -29,6 +32,17 @@ module top_module(
     end
  
     // Output logic
-    assign done = (state == BYTE1_DONE);
+    always @(*) begin
+      done =  (state == BYTE1_DONE);
+    end
+
+    always @(posedge clk) begin
+      case(state)
+        BYTE1_DONE: out_bytes[23:16] = in;
+        BYTE1: out_bytes[23:16] = in;
+        BYTE2: out_bytes[15:8] = in;
+        BYTE3: out_bytes[7:0] = in;
+      endcase
+    end
 
 endmodule
