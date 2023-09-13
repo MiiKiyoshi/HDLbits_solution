@@ -6,4 +6,4 @@ $commitMessage = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 git commit -m $commitMessage
 
 # 원격 저장소에 푸시
-git push origin master
+git push
