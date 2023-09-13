@@ -1,0 +1,1 @@
+"serial_receiver_tb" -s "serial_receiver_tb" -debug "wave" 

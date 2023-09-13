@@ -2,6 +2,7 @@ module serial_receiver(
     input clk,
     input in,
     input reset,    // Synchronous reset
+    output [7:0] out_byte,
     output done
 ); 
 
@@ -23,6 +24,7 @@ module serial_receiver(
             ERROR = 4'd11;
 
   // State transition logic
+  // Serial protocol은 LSB부터 보낸다고 합니다.
   always @(*) begin
     case(state)
       BIT0 : next_state = BIT1;
@@ -52,5 +54,27 @@ module serial_receiver(
   
   // Output logic
   assign done = (state == STOP);
+  reg [7:0] out_byte_ff;
+
+  always @(posedge clk) begin
+    if(reset) begin
+      out_byte_ff <= 8'b0;
+    end else begin
+      case(next_state)
+        BIT0: out_byte_ff[0] <= in;
+        BIT1: out_byte_ff[1] <= in;
+        BIT2: out_byte_ff[2] <= in;
+        BIT3: out_byte_ff[3] <= in;
+        BIT4: out_byte_ff[4] <= in;
+        BIT5: out_byte_ff[5] <= in;
+        BIT6: out_byte_ff[6] <= in;
+        BIT7: out_byte_ff[7] <= in;
+        default: out_byte_ff <= out_byte_ff;
+      endcase
+    end
+  end
+
+  assign out_byte = (state == STOP)? out_byte_ff : 8'b0;
 
 endmodule
+
